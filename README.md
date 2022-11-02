@@ -13,7 +13,6 @@ As part of the module coursework (completed prior to the challenge assignment), 
 4. Use statistics like minimum, maximum, and average to analyze data, specifically using a .describe() function.
 5. Design a Flask application using data.
 ## Results
-There is a bulleted list that addresses the three key differences in weather between June and December.
 ### Deliverable 1: Summary Statistics for June
 
 Using Python, Pandas functions and methods, and SQLAlchemy, the date column of the Measurements table in the hawaii.sqlite database was filtered to retrieve all the temperatures for the month of June. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.<br />
