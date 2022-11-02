@@ -37,7 +37,7 @@ A .describe() function was used to calculate the mean, minimum, maximum, standar
 ## Summary
 The findings showed that in terms of temperature alone, the months of June and December are not significantly different. The analysis could be improved upon if the precipitation data were incorporated into the analysis, as this may offer more insight into weather fluctuations that could impact sales.
 ### Additional Query 1: Include Preciptation for the Month of June
-<br />The following code was used to create a new DataFrame that includes preciptation data for the month of June: <br />
+The following code was used to create a new DataFrame that includes preciptation data for the month of June: <br />
  ```
 juneprcptobs = session.query(Measurement.date, Measurement.prcp, Measurement.tobs).\
 filter(extract('month',Measurement.date) ==6).all()
@@ -48,8 +48,8 @@ june_tobs_prcp_df.describe()
   ```
 The results were as follows:<br />
 ![June_Rainfall_Temps](https://github.com/banasibb/surfs_up/blob/698ab82178b4b63a6e83a6437ea81a21571ab32a/Resources/June_Summary_Rainfall_Temps.png)
-### Additional Query 1: Include Preciptation for the Month of December
-<br />The following code was used to create a new DataFrame that includes preciptation data for the month of December: <br />
+### Additional Query 2: Include Preciptation for the Month of December
+The following code was used to create a new DataFrame that includes preciptation data for the month of December: <br />
  ```
 decprcptobs = session.query(Measurement.date, Measurement.prcp, Measurement.tobs).\
 filter(extract('month',Measurement.date) ==12).all()
