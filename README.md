@@ -20,6 +20,10 @@ There is a bulleted list that addresses the three key differences in weather bet
 ### Deliverable 1: Summary Statistics for June
 
 Using Python, Pandas functions and methods, and SQLAlchemy, the date column of the Measurements table in the hawaii.sqlite database was filtered to retrieve all the temperatures for the month of June. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.<br />
+The code used to filter on the month of June was as follows: <br />
+ ```
+june = session.query(Measurement.date, Measurement.tobs).filter(extract('month',Measurement.date) ==6)
+  ```
 ![June_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/June_Summary_Stats.png)
 ### Deliverable 2: Summary Statistics for December
 The same methods were applied as for Deliverable 1, but using the temperatures for the month of December. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.<br />
@@ -51,18 +55,7 @@ Using a bulleted list, address the following election outcomes. Use images or ex
     The winner of the election was Diana DeGette, with a total of 272,892 votes or 73.8% of the total votes.<br />
     <br />The following code was required to conduct this analysis and print the results to the terminal: <br />
  ```
-        if (votes > winning_count) and (vote_percentage > winning_percentage):
-            winning_count = votes
-            winning_candidate = candidate_name
-            winning_percentage = vote_percentage
-    winning_candidate_summary = (
-        f"-------------------------\n"
-        f"Winner: {winning_candidate}\n"
-        f"Winning Vote Count: {winning_count:,}\n"
-        f"Winning Percentage: {winning_percentage:.1f}%\n"
-        f"-------------------------\n")
-    print(winning_candidate_summary)
-    txt_file.write(winning_candidate_summary)
+june = session.query(Measurement.date, Measurement.tobs).filter(extract('month',Measurement.date) ==6)
   ```
 - Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.<br />
     The results for each county are as follows:<br />
