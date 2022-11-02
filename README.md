@@ -37,8 +37,17 @@ A .describe() function was used to calculate the mean, minimum, maximum, standar
 ### Findings
 ## Summary
 There is a high-level summary of the results and there are two additional queries to perform to gather more weather data for June and December
-
-
+### March 
+<br />The code used to filter on the month of March was as follows: <br />
+ ```
+march = []
+march = session.query(Measurement.date, Measurement.tobs).filter(extract('month',Measurement.date) ==3)
+mar_tobs = list((march))
+march_df = pd.DataFrame(mar_tobs, columns=['date','March Temps'])
+march_df.describe()
+  ```
+The results were as follows:<br />
+![March_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/Dec_Summary_Stats.png)
 Using a bulleted list, address the following election outcomes. Use images or examples of your code as support where necessary.
 - How many votes were cast in this congressional election?<br />
   The total number of votes cast in the election was 369,711.
