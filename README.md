@@ -1,12 +1,10 @@
-# surfs_up
-Jupyter Notebook, VS Code, and GitHub
-# Election-Analysis-Challenge
-Module 3 Election Analysis Challenge Assignment
+# Surf's Up Challenge
+Module 9 Advanced Data Storage and Retrieval Challenge Assignment
 ## Overview of the Statistical Analysis
 The purpose of the analysis was to summarize temperature data for the months of June and December in Oahu to determine if the surf and ice cream shop business is sustainable year-round.
 ### Resources:
 - Data Source: SurfsUp_Challenge.ipynb, hawaii.sqlite
-- Software: Python, 3.7.6, Microsoft Virtual Studio Code 1.71.1, SQLAlchemy, Jupyter Notebook
+- Software: Python, 3.7.6, Microsoft Virtual Studio Code 1.71.1, SQLAlchemy, Jupyter Notebook 2.27.21
 ### Analysis Components:
 As part of the module coursework (completed prior to the challenge assignment), tasks #1 through #5 below were required. Tasks #6 through #8 were required as part of the PyPoll Challenge :
   1. Calculate a total number of votes cast.
