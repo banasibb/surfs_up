@@ -3,7 +3,7 @@ Module 9 Advanced Data Storage and Retrieval Challenge Assignment
 ## Overview of the Statistical Analysis
 The purpose of the analysis was to summarize temperature and climate data for the months of June and December in Oahu, Hawaii to determine if the surf and ice cream shop business is sustainable.
 ### Resources:
-- Data Source: [SurfsUp_Challenge.ipynb](https://github.com/banasibb/surfs_up/blob/79544847a49a8c16ff56379493862b2f54435fce/SurfsUp_Challenge.ipynb), [hawaii.sqlite](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/hawaii.sqlite)
+- Data Sources: [hawaii.sqlite](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/hawaii.sqlite)
 - Software: Python, 3.7.6, Microsoft Virtual Studio Code 1.71.1, SQLAlchemy, Jupyter Notebook 2.27.21
 ### Analysis Components:
 As part of the module coursework (completed prior to the challenge assignment), the following tasks were undertaken to explore the provided weather data:
@@ -13,6 +13,7 @@ As part of the module coursework (completed prior to the challenge assignment), 
 4. Use statistics like minimum, maximum, and average to analyze data, specifically using a .describe() function.
 5. Design a Flask application using data.
 ## Results
+The analysis can be found in the following file: [SurfsUp_Challenge.ipynb](https://github.com/banasibb/surfs_up/blob/79544847a49a8c16ff56379493862b2f54435fce/SurfsUp_Challenge.ipynb)<br />
 ### Deliverable 1: Summary Statistics for June
 
 Using Python, Pandas functions and methods, and SQLAlchemy, the date column of the Measurements table in the hawaii.sqlite database was filtered to retrieve all the temperatures for the month of June. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.<br />
