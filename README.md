@@ -47,7 +47,7 @@ march_df = pd.DataFrame(mar_tobs, columns=['date','March Temps'])
 march_df.describe()
   ```
 The results were as follows:<br />
-![March_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/Dec_Summary_Stats.png)
+![March_Temps](https://github.com/banasibb/surfs_up/blob/e511fd8ca74bbba6845f46f5ddf78485a7acada3/Resources/March_Summary_Stats.png)
 Using a bulleted list, address the following election outcomes. Use images or examples of your code as support where necessary.
 - How many votes were cast in this congressional election?<br />
   The total number of votes cast in the election was 369,711.
