@@ -32,6 +32,7 @@ The same methods were applied as for Deliverable 1, but using the temperatures f
  ```
 dec = session.query(Measurement.date, Measurement.tobs).filter(extract('month',Measurement.date) ==12)
   ```
+A .describe() function was used to calculate the mean, minimum, maximum, standard deviation, and percentiles. The results were as follows:<br />
 ![Dec_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/Dec_Summary_Stats.png)
 ### Findings
 ## Summary
