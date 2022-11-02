@@ -48,7 +48,7 @@ june_tobs_prcp_df.set_index(june_tobs_prcp_df['date'],inplace=True)
 june_tobs_prcp_df.describe()
   ```
 The results were as follows:<br />
-![March_Temps](https://github.com/banasibb/surfs_up/blob/e511fd8ca74bbba6845f46f5ddf78485a7acada3/Resources/March_Summary_Stats.png)
+![June_Rainfall_Temps](https://github.com/banasibb/surfs_up/blob/698ab82178b4b63a6e83a6437ea81a21571ab32a/Resources/June_Summary_Rainfall_Temps.png)
 <br />The following code was used to create a new DataFrame that includes preciptation data for the month of December: <br />
  ```
 decprcptobs = session.query(Measurement.date, Measurement.prcp, Measurement.tobs).\
