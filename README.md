@@ -37,14 +37,26 @@ A .describe() function was used to calculate the mean, minimum, maximum, standar
 ### Findings
 ## Summary
 There is a high-level summary of the results and there are two additional queries to perform to gather more weather data for June and December
-### March 
-<br />The code used to filter on the month of March was as follows: <br />
+### Include Preciptation for the Month of June
+<br />The following code was used to create a new DataFrame that includes preciptation data for the month of June: <br />
  ```
-march = []
-march = session.query(Measurement.date, Measurement.tobs).filter(extract('month',Measurement.date) ==3)
-mar_tobs = list((march))
-march_df = pd.DataFrame(mar_tobs, columns=['date','March Temps'])
-march_df.describe()
+juneprcptobs = session.query(Measurement.date, Measurement.prcp, Measurement.tobs).\
+filter(extract('month',Measurement.date) ==6).all()
+june_tobs_prcp=list((juneprcptobs))
+june_tobs_prcp_df = pd.DataFrame(june_tobs_prcp,columns=['date','June Precip','June Temps'])
+june_tobs_prcp_df.set_index(june_tobs_prcp_df['date'],inplace=True)
+june_tobs_prcp_df.describe()
+  ```
+The results were as follows:<br />
+![March_Temps](https://github.com/banasibb/surfs_up/blob/e511fd8ca74bbba6845f46f5ddf78485a7acada3/Resources/March_Summary_Stats.png)
+<br />The following code was used to create a new DataFrame that includes preciptation data for the month of December: <br />
+ ```
+decprcptobs = session.query(Measurement.date, Measurement.prcp, Measurement.tobs).\
+filter(extract('month',Measurement.date) ==12).all()
+dec_tobs_prcp=list((decprcptobs))
+dec_tobs_prcp_df = pd.DataFrame(dec_tobs_prcp,columns=['date','Dec Precip','Dec Temps'])
+dec_tobs_prcp_df.set_index(dec_tobs_prcp_df['date'],inplace=True)
+dec_tobs_prcp_df.describe()
   ```
 The results were as follows:<br />
 ![March_Temps](https://github.com/banasibb/surfs_up/blob/e511fd8ca74bbba6845f46f5ddf78485a7acada3/Resources/March_Summary_Stats.png)
