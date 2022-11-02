@@ -24,6 +24,7 @@ Using Python, Pandas functions and methods, and SQLAlchemy, the date column of t
  ```
 june = session.query(Measurement.date, Measurement.tobs).filter(extract('month',Measurement.date) ==6)
   ```
+A .describe() function was used to calculate the mean, minimum, maximum, standard deviation, and percentiles. The results were as follows:<br />
 ![June_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/June_Summary_Stats.png)
 ### Deliverable 2: Summary Statistics for December
 The same methods were applied as for Deliverable 1, but using the temperatures for the month of December. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.<br />
