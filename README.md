@@ -35,6 +35,8 @@ dec = session.query(Measurement.date, Measurement.tobs).filter(extract('month',M
 A .describe() function was used to calculate the mean, minimum, maximum, standard deviation, and percentiles. The results were as follows:<br />
 ![Dec_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/Dec_Summary_Stats.png)
 ### Findings
+- The mean or average temperature in the month of June over the time period included in the analysis was approximately 74 degrees, compared to 71 degrees in December. 
+- 
 ## Summary
 The findings showed that in terms of temperature alone, the months of June and December are not significantly different. The analysis could be improved upon if the precipitation data were incorporated into the analysis, as this may offer more insight into weather fluctuations that could impact sales.
 ### Additional Query 1: Include Preciptation for the Month of June
