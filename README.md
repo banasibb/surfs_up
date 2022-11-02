@@ -1,7 +1,7 @@
 # Surf's Up Challenge
 Module 9 Advanced Data Storage and Retrieval Challenge Assignment
 ## Overview of the Statistical Analysis
-The purpose of the analysis was to summarize temperature data for the months of June and December in Oahu, Hawaii to determine if the surf and ice cream shop business is sustainable year-round.
+The purpose of the analysis was to summarize temperature and climate data for the months of June and December in Oahu, Hawaii to determine if the surf and ice cream shop business is sustainable.
 ### Resources:
 - Data Source: [SurfsUp_Challenge.ipynb](https://github.com/banasibb/surfs_up/blob/79544847a49a8c16ff56379493862b2f54435fce/SurfsUp_Challenge.ipynb), [hawaii.sqlite](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/hawaii.sqlite)
 - Software: Python, 3.7.6, Microsoft Virtual Studio Code 1.71.1, SQLAlchemy, Jupyter Notebook 2.27.21
