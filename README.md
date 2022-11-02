@@ -3,7 +3,7 @@ Module 9 Advanced Data Storage and Retrieval Challenge Assignment
 ## Overview of the Statistical Analysis
 The purpose of the analysis was to summarize temperature data for the months of June and December in Oahu to determine if the surf and ice cream shop business is sustainable year-round.
 ### Resources:
-- Data Source: SurfsUp_Challenge.ipynb, hawaii.sqlite
+- Data Source: [SurfsUp_Challenge.ipynb](), [hawaii.sqlite](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/hawaii.sqlite)
 - Software: Python, 3.7.6, Microsoft Virtual Studio Code 1.71.1, SQLAlchemy, Jupyter Notebook 2.27.21
 ### Analysis Components:
 As part of the module coursework (completed prior to the challenge assignment), tasks #1 through #5 below were required. Tasks #6 through #8 were required as part of the PyPoll Challenge :
@@ -18,9 +18,12 @@ As part of the module coursework (completed prior to the challenge assignment), 
 ## Results
 There is a bulleted list that addresses the three key differences in weather between June and December.
 ### Deliverable 1: Summary Statistics for June
+
 Using Python, Pandas functions and methods, and SQLAlchemy, the date column of the Measurements table in the hawaii.sqlite database was filtered to retrieve all the temperatures for the month of June. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.
+![June_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/June_Summary_Stats.png)
 ### Deliverable 2: Summary Statistics for December
 The same methods were applied as for Deliverable 1, but using the temperatures for the month of December. The temperatures were then converted to a list, a DataFrame was created from the list, and summary statistics were generated.
+![Dec_Temps](https://github.com/banasibb/surfs_up/blob/7ffb5581e784e225a4126853e1fe9df2e37737af/Resources/Dec_Summary_Stats.png)
 ### Findings
 ## Summary
 There is a high-level summary of the results and there are two additional queries to perform to gather more weather data for June and December
